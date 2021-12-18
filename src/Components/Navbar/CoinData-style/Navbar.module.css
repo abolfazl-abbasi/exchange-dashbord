@@ -1,0 +1,111 @@
+.header {
+  width: 100vw;
+  height: 170px;
+  background-color: transparent;
+}
+
+.header .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header .container .marketReport {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header .container .marketReport .marketReportText {
+  margin: 0 0 8px;
+}
+
+.header .container .marketReport .marketReportRange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .container .marketReport .marketReportRange .marketReportRangeNumber__positive, .header .container .marketReport .marketReportRange .marketReportRangeNumber__zero, .header .container .marketReport .marketReportRange .marketReportRangeNumber__negative {
+  font-size: .8rem;
+  font-weight: 600;
+  margin: 0 10px 0 0;
+  padding: 2px 4px;
+  background-color: #5db77e4d;
+  color: #1bab52;
+  border-radius: 3px;
+}
+
+.header .container .marketReport .marketReportRange .marketReportRangeNumber__zero {
+  background-color: #595b5a4d;
+  color: #8b8686;
+  padding: 0px 10px;
+}
+
+.header .container .marketReport .marketReportRange .marketReportRangeNumber__negative {
+  background-color: #af3a3a40;
+  color: #c73e3e;
+}
+
+.header .container .marketReport .marketReportRange .marketReportRangeText {
+  font-size: .82rem;
+  color: #a3a3a3;
+}
+
+.header .container .inputTools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .container .inputTools .searchInput, .header .container .inputTools .selectCurrency {
+  width: 240px;
+  padding: 10px 10px;
+  border: 1px solid #363636;
+  background-color: transparent;
+  border-radius: 8px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: white;
+  margin: 10px;
+}
+
+.header .container .inputTools .searchInput:focus, .header .container .inputTools .selectCurrency:focus {
+  outline: none;
+}
+
+.header .container .inputTools .selectCurrency {
+  width: 80px;
+}
+
+.header .container .inputTools .selectCurrency option {
+  background-color: #171717;
+}
+/*# sourceMappingURL=Navbar.module.css.map */

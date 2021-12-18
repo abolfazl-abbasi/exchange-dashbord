@@ -1,0 +1,92 @@
+@import './../../colors/colors';
+
+.header {
+  width: 100vw;
+  height: 170px;
+  background-color: transparent;
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .marketReport {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .marketReportText {
+        margin: 0 0 8px;
+      }
+
+      .marketReportRange {
+        display: flex;
+        justify-content: space-around;
+        display: flex;
+        justify-content: center;
+
+        .marketReportRangeNumber__positive {
+          font-size: .8rem;
+          font-weight: 600;
+          margin: 0 10px 0 0;
+          padding: 2px 4px;
+          background-color: #5db77e4d;
+          color: #1bab52;
+          border-radius: 3px;
+        }
+
+        .marketReportRangeNumber__zero {
+          @extend .marketReportRangeNumber__positive;
+          background-color: #595b5a4d;
+          color: #8b8686;
+          padding: 0px 10px;
+        }
+
+        .marketReportRangeNumber__negative {
+          @extend .marketReportRangeNumber__positive;
+          background-color: #af3a3a40;
+          color: #c73e3e;
+        }
+
+        .marketReportRangeText {
+          font-size: .82rem;
+          color: $black_400;
+        }
+      }
+    }
+
+    .inputTools {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .searchInput {
+        width: 240px;
+        padding: 10px 10px;
+        border: 1px solid #363636;
+        background-color: transparent;
+        border-radius: 8px;
+        appearance: none;
+        color: white;
+        margin: 10px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .selectCurrency {
+        @extend .searchInput;
+        width: 80px;
+
+        option {
+          background-color: $black_900;
+        }
+
+      }
+
+    }
+  }
+}
