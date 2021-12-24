@@ -1,1 +1,152 @@
-/* No CSS *//*# sourceMappingURL=CoinData.module.css.map */
+.coinsData {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 0 0;
+}
+
+.coinsData .coinsMainContainer {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.coinsData .coinsMainContainer tr:nth-child(even),
+.coinsData .coinsMainContainer thead tr:first-child {
+  border-radius: 7px;
+  background-color: #171717;
+}
+
+.coinsData .coinsMainContainer thead tr:first-child {
+  color: #737373;
+}
+
+.coinsData .coinsMainContainer .coinContainer {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinDataHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData.coinNameData,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead.coinNameData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData.coinNameData .coinName,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead.coinNameData .coinName {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData.coinNameData .coinImage,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead.coinNameData .coinImage {
+  width: 25px;
+  margin: 0 10px 0 0;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData.coinNameData .coinSymbol,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead.coinNameData .coinSymbol {
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin: 0 8px;
+  color: #737373;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData .coinTradeAction,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead .coinTradeAction {
+  background-color: #829bb11a;
+  color: #0061ff;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData .coinTradeAction:hover,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead .coinTradeAction:hover {
+  background-color: #8e979f42;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData.priceDown,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead.priceDown {
+  color: #EF4444;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData.priceUp,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead.priceUp {
+  color: #4ADE80;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData.priceStatic,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead.priceStatic {
+  color: #525252;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData .coinPriceArrow,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead .coinPriceArrow {
+  margin: 0 10px 0 0;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData:first-child,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead:first-child {
+  width: 10px;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData:last-child,
+.coinsData .coinsMainContainer .coinContainer .coinDataHead:last-child {
+  width: 80px;
+}
+
+.coinsData .coinsMainContainer .coinContainer .coinData:nth-child(2),
+.coinsData .coinsMainContainer .coinContainer .coinDataHead:nth-child(2) {
+  width: 230px;
+}
+/*# sourceMappingURL=CoinData.module.css.map */

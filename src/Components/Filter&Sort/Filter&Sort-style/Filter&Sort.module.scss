@@ -1,0 +1,55 @@
+@import './../../colors/colors';
+
+.filterSort {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .sort {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .sortItems {
+        background-color: $black_max;
+        color: $black_400;
+        margin: 0 10px;
+        padding: 6px 15px;
+        border-radius: 12px;
+        transition: background-color .1s;
+        font-size: .95rem;
+        cursor: pointer;
+
+        &.active {
+          background-color: $black_700;
+          color: $black_200;
+
+          &:hover {
+            background-color: $black_600;
+            color: $black_200;
+          }
+        }
+
+        &:hover {
+          background-color: $black_800;
+          color: $black_300;
+        }
+      }
+    }
+
+    .filter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .filterItems {
+        background-color: $black_800;
+        color: $black_300;
+        padding: 12px 15px;
+        border-radius: 15px;
+      }
+
+    }
+  }
+}

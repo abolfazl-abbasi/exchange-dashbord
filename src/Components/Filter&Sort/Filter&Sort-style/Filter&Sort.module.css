@@ -1,0 +1,69 @@
+.filterSort .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.filterSort .container .sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filterSort .container .sort .sortItems {
+  background-color: #101010;
+  color: #a3a3a3;
+  margin: 0 10px;
+  padding: 6px 15px;
+  border-radius: 12px;
+  -webkit-transition: background-color .1s;
+  transition: background-color .1s;
+  font-size: .95rem;
+  cursor: pointer;
+}
+
+.filterSort .container .sort .sortItems.active {
+  background-color: #404040;
+  color: #e5e5e5;
+}
+
+.filterSort .container .sort .sortItems.active:hover {
+  background-color: #525252;
+  color: #e5e5e5;
+}
+
+.filterSort .container .sort .sortItems:hover {
+  background-color: #262626;
+  color: #d4d4d4;
+}
+
+.filterSort .container .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filterSort .container .filter .filterItems {
+  background-color: #262626;
+  color: #d4d4d4;
+  padding: 12px 15px;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=Filter&Sort.module.css.map */

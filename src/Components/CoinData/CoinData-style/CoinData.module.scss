@@ -1,1 +1,111 @@
-// @import './../../colors/colors';
+@import './../../colors/colors';
+
+.coinsData {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 0;
+
+  .coinsMainContainer {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    tr:nth-child(even),
+    thead tr:first-child {
+      border-radius: 7px;
+      background-color: $black_900;
+    }
+
+    thead tr:first-child {
+      color: $black_500;
+    }
+
+    .coinContainer {
+      width: 1200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+
+      .coinDataHead {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .coinData,
+      .coinDataHead {
+
+        width: 150px;
+        display: flex;
+        align-items: end;
+
+        &.coinNameData {
+          display: flex;
+          align-items: center;
+
+          .coinName {
+            align-self: flex-end;
+          }
+
+          .coinImage {
+            width: 25px;
+            margin: 0 10px 0 0;
+          }
+
+          .coinSymbol {
+            text-transform: uppercase;
+            font-size: .8rem;
+            margin: 0 8px;
+            color: $black_500;
+          }
+
+        }
+
+        .coinTradeAction {
+          background-color: #829bb11a;
+          color: #0061ff;
+          padding: 7px 15px;
+          border: none;
+          border-radius: 10px;
+          transition: .15s;
+
+          &:hover {
+            background-color: #8e979f42;
+          }
+        }
+
+        &.priceDown {
+          color: $red_500;
+        }
+
+        &.priceUp {
+          color: $green_400;
+        }
+
+        &.priceStatic {
+          color: $black_600;
+        }
+
+        .coinPriceArrow {
+          margin: 0 10px 0 0;
+        }
+
+        &:first-child {
+          width: 10px;
+        }
+
+        &:last-child {
+          width: 80px;
+        }
+
+        &:nth-child(2) {
+          width: 230px;
+        }
+      }
+    }
+  }
+}
