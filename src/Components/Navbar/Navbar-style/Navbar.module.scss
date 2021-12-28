@@ -1,9 +1,9 @@
 @import './../../colors/colors';
 
 .header {
-  width: 100vw;
+  width: 1200px;
   height: 140px;
-  // margin-top: 20px;
+  margin: auto;
   background-color: transparent;
 
   .container {
@@ -11,7 +11,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .marketReport {
       display: flex;
@@ -71,7 +71,7 @@
         border-radius: 8px;
         appearance: none;
         color: white;
-        margin: 10px;
+        margin: 0 0 0 20px;
 
         &:focus {
           outline: none;

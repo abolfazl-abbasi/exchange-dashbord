@@ -1,5 +1,21 @@
 @import './../../colors/colors';
 
+@keyframes react-loading-skeleton {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes skeleton {
+  0% {
+    background: linear-gradient(30deg, $black_400 30%, white 0%, $black_400 30%);
+  }
+
+  100% {
+    background: linear-gradient(30deg, $black_400 30%, white 100%, $black_400 30%);
+  }
+}
+
 .coinsData {
   width: 100%;
   display: flex;
@@ -12,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 
 
     tr:nth-child(even),
@@ -36,12 +53,74 @@
         justify-content: space-between;
       }
 
+      .loader {
+        height: 12px;
+        position: relative;
+        overflow: hidden;
+        background-color: $black_300;
+        z-index: 1;
+
+        &::after {
+          content: ' ';
+          display: block;
+          position: absolute;
+          left: 0;
+          right: 0;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-image: linear-gradient(90deg,
+              $black_300,
+              white,
+              $black_300);
+
+          transform: translateX(-100%);
+
+          animation: react-loading-skeleton 1.5s ease infinite;
+        }
+      }
+
+      .loader1 {
+        width: 29px;
+        height: 29px;
+        border-radius: 25px;
+        // background-color: $black_300;
+      }
+
+      .loader2 {
+        width: 120px;
+        margin: 0 10px;
+        border-radius: 5px;
+        // background-color: $black_300;
+      }
+
+      .loader3 {
+        width: 150px;
+        margin: 0 10px;
+        border-radius: 5px;
+        // background-color: $black_300;
+      }
+
+      .loader4,
+      .loader5,
+      .loader6 {
+        width: 125px;
+        border-radius: 5px;
+        // background-color: $black_300;
+      }
+
+      .loader7 {
+        width: 66px;
+        height: 29px;
+        border-radius: 12px;
+      }
+
       .coinData,
       .coinDataHead {
 
-        width: 150px;
+        width: 125px;
         display: flex;
         align-items: end;
+        white-space: nowrap;
 
         &.coinNameData {
           display: flex;

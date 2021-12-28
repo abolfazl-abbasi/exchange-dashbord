@@ -1,3 +1,35 @@
+@-webkit-keyframes react-loading-skeleton {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes react-loading-skeleton {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes skeleton {
+  0% {
+    background: linear-gradient(30deg, #a3a3a3 30%, white 0%, #a3a3a3 30%);
+  }
+  100% {
+    background: linear-gradient(30deg, #a3a3a3 30%, white 100%, #a3a3a3 30%);
+  }
+}
+
+@keyframes skeleton {
+  0% {
+    background: linear-gradient(30deg, #a3a3a3 30%, white 0%, #a3a3a3 30%);
+  }
+  100% {
+    background: linear-gradient(30deg, #a3a3a3 30%, white 100%, #a3a3a3 30%);
+  }
+}
+
 .coinsData {
   width: 100%;
   display: -webkit-box;
@@ -58,15 +90,71 @@
           justify-content: space-between;
 }
 
+.coinsData .coinsMainContainer .coinContainer .loader {
+  height: 12px;
+  position: relative;
+  overflow: hidden;
+  background-color: #d4d4d4;
+  z-index: 1;
+}
+
+.coinsData .coinsMainContainer .coinContainer .loader::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, right top, from(#d4d4d4), color-stop(white), to(#d4d4d4));
+  background-image: linear-gradient(90deg, #d4d4d4, white, #d4d4d4);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-animation: react-loading-skeleton 1.5s ease infinite;
+          animation: react-loading-skeleton 1.5s ease infinite;
+}
+
+.coinsData .coinsMainContainer .coinContainer .loader1 {
+  width: 29px;
+  height: 29px;
+  border-radius: 25px;
+}
+
+.coinsData .coinsMainContainer .coinContainer .loader2 {
+  width: 120px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.coinsData .coinsMainContainer .coinContainer .loader3 {
+  width: 150px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.coinsData .coinsMainContainer .coinContainer .loader4,
+.coinsData .coinsMainContainer .coinContainer .loader5,
+.coinsData .coinsMainContainer .coinContainer .loader6 {
+  width: 125px;
+  border-radius: 5px;
+}
+
+.coinsData .coinsMainContainer .coinContainer .loader7 {
+  width: 66px;
+  height: 29px;
+  border-radius: 12px;
+}
+
 .coinsData .coinsMainContainer .coinContainer .coinData,
 .coinsData .coinsMainContainer .coinContainer .coinDataHead {
-  width: 150px;
+  width: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  white-space: nowrap;
 }
 
 .coinsData .coinsMainContainer .coinContainer .coinData.coinNameData,

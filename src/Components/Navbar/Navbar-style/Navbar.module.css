@@ -1,6 +1,7 @@
 .header {
-  width: 100vw;
+  width: 1200px;
   height: 140px;
+  margin: auto;
   background-color: transparent;
 }
 
@@ -13,8 +14,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header .container .marketReport {
@@ -94,7 +96,7 @@
      -moz-appearance: none;
           appearance: none;
   color: white;
-  margin: 10px;
+  margin: 0 0 0 20px;
 }
 
 .header .container .inputTools .searchInput:focus, .header .container .inputTools .selectCurrency:focus {
